@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatchKo - Find Your Workout Buddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="header">
+  <nav class="navbar">
+    <a href="#" class="logo">
+      <img src="logo.png" alt="Matchko Logo" class="logo-image">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#hero" class="smooth-slide">About</a></li>
+      <li><a href="#features" class="smooth-slide">Why choose us?</a></li>
+      <li><a href="#testimonials" class="smooth-slide">Key Features</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section class="hero" id="hero">
+  <div class="content">
+    <div class="gif-container">
+      <img src="./baseball.gif" class="blurred-gif" alt="Blurred GIF">
+    </div>
+    <h1>Find Your Perfect Workout Buddy</h1>
+    <p>Join MatchKo and connect with Lovre   for your fitness journey.</p>
+    <a href="#" class="cta-btn">Get Started</a>
+  </div>
+</section>
+
+
+  <section class="features" id="features">
+    <h2>Why Choose MatchKo?</h2>
+    <div class="feature">
+      <i class="fa fa-heart"></i>
+      <h3>Connect</h3>
+      <p>Discover and connect with individuals who share your fitness goals and interests.</p>
+    </div>
+    <div class="feature">
+      <i class="fa fa-trophy"></i>
+      <h3>Achieve</h3>
+      <p>Set and achieve your fitness goals with the support and motivation of your workout buddy.</p>
+    </div>
+    <div class="feature">
+      <i class="fa fa-comments"></i>
+      <h3>Communicate</h3>
+      <p>Stay connected and communicate with your workout buddy through our messaging platform.</p>
+    </div>
+  </section>
+    
+  <section class="testimonials" id="testimonials">
+    <center> <h2>Key features</h2>
+
+ 
+    <div class="testimonial-slider" id="testimonials">
+      <div class="testimonial-slide">
+        <p class="comment">Build and connect a community of like minded individuals.</p>
+        <p class="author"></p>
+      </div>
+      <div class="testimonial-slide">
+        <p class="comment">Join an already existing event, no planning.</p>
+        <p class="author"></p>
+      </div>
+      <div class="testimonial-slide">
+        <p class="comment">Making people more active and social.</p>
+        <p class="author"></p>
+      </div>
+    </div>
+    </center>
+  </section>
+
+<div class="slideshow-container"id="slideshow">
+  <div class="slide">
+    <img src="voliloptu.avif" alt="Image 1">
+  </div>
+  <div class="slide">
+    <img src="padle.avif" alt="Image 2">
+  </div>
+  <div class="slide">
+    <img src="football.avif" alt="Image 3">
+  </div>
+  <div class="slide">
+    <img src="tenis.avif" alt="Image 4">
+  </div>
+</div>
+
+
+  <footer class="footer">
+    <p>&copy; 2023 MatchKo. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script>
+  $(document).ready(function() {
+    $('.smooth-slide').on('click', function(event) {
+      event.preventDefault();
+      var targetId = $(this).attr('href');
+      var targetOffset = $(targetId).offset().top;
+      var duration = 800;
+
+      $('html, body').animate(
+        {
+          scrollTop: targetOffset
+        },
+        duration
+      );
+    });
+  });
+</script>
+
+</body>
+
+</html>

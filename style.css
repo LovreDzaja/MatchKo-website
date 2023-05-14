@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #a00edf;
+  height: 60px;
+}
+
+.logo-image {
+  width: 200px;
+  height: 200px;
+}
+
+.hero {
+  position: relative;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.gif-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("./baseball.gif");
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blurred-gif {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  color: #c8c7c7;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #555;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  color: #a00edf;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+  color: #a00edf;
+  overflow-y: hidden;
+}
+
+.nav-menu li a {
+  color: #a00edf;
+  text-decoration: none;
+}
+
+/* Features section styles */
+.features {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #e3f9fb;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  margin-bottom: 40px;
+}
+
+.feature i {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.feature p {
+  font-size: 16px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Testimonials section styles */
+.testimonials {
+  position: relative; /* Change position to relative */
+
+
+  background-color: #f4f4f4;
+  padding: 80px 80px;
+  text-align: center;
+}
+
+.testimonials h2 {
+ font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.testimonial-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+
+  margin: 0 ; /* Center the testimonial slider */
+}
+
+
+
+.testimonials .comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+ 
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 ; /* Center the testimonial slider */
+}
+/* Image section styles */
+.image-section {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #4FC3CC;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive styles */
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 5%;
+}
+
+.logo-image {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  color: #050305;
+  font-size: 25px;
+}
+
+.nav-menu li {
+  margin-bottom: 10px;
+}
+
+.nav-menu li a {
+    color: rgb(68,46,139);
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* Responsive styles */
+
+/* Small screens */
+@media (max-width: 767px) {
+  .logo-image {
+    width: 140px;
+    margin-right: 10px;
+  }
+
+  .nav-menu {
+    flex-basis: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-menu li {
+    margin-bottom: 2px;
+    font-size: 20px;
+  }
+
+  .nav-menu li a {
+    padding: 2px;
+  }
+
+  .features > h2 {
+    font-size: 25px;
+  }
+}
+/* slideshow */
+
+.slideshow-container {
+overflow-y: hidden;
+  position: relative;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  overflow-y: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshow-container .slide:first-child {
+  opacity: 1;
+}
+

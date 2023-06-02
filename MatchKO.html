@@ -12,7 +12,7 @@
 <header class="header">
   <nav class="navbar">
     <a href="#" class="logo">
-      <img src="logo.png" alt="Matchko Logo" class="logo-image">
+      <img src="./slike/logo.png" alt="Matchko Logo" class="logo-image">
     </a>
     <ul class="nav-menu">
       <li><a href="#hero" class="smooth-slide">About</a></li>
@@ -26,11 +26,17 @@
 <section class="hero" id="hero">
   <div class="content">
     <div class="gif-container">
-      <img src="./baseball.gif" class="blurred-gif" alt="Blurred GIF">
+      <img src="./slike/baseball.gif" class="blurred-gif" alt="Blurred GIF">
     </div>
     <h1>Find Your Perfect Workout Buddy</h1>
-    <p>Join MatchKo and connect with Lovre   for your fitness journey.</p>
-    <a href="#" class="cta-btn">Get Started</a>
+    <p>Join MatchKo and connect with community for your fitness journey.</p>
+    <form method="post" action="https://formspree.io/f/mayzgqbp">
+      <input type="email" name="_cc" placeholder="Enter your email address" required>
+      <button class="submit" type="submit">Submit</button>
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/MatchKO.html">
+      <input type="hidden" name="_autoresponse" value="Thank you for registering! We will notify you when our application is ready.">
+    </form>
+      
   </div>
 </section>
 
@@ -55,9 +61,8 @@
   </section>
     
   <section class="testimonials" id="testimonials">
-    <center> <h2>Key features</h2>
-
- 
+    <center> 
+    <h2>Key features</h2>
     <div class="testimonial-slider" id="testimonials">
       <div class="testimonial-slide">
         <p class="comment">Build and connect a community of like minded individuals.</p>
@@ -77,24 +82,21 @@
 
 <div class="slideshow-container"id="slideshow">
   <div class="slide">
-    <img src="voliloptu.avif" alt="Image 1">
+    <img src="./slike/voliloptu.avif" alt="Image 1">
   </div>
   <div class="slide">
-    <img src="padle.avif" alt="Image 2">
+    <img src="./slike/padle.avif" alt="Image 2">
   </div>
   <div class="slide">
-    <img src="football.avif" alt="Image 3">
+    <img src="./slike/football.avif" alt="Image 3">
   </div>
   <div class="slide">
-    <img src="tenis.avif" alt="Image 4">
+    <img src="./slike/tenis.avif" alt="Image 4">
   </div>
 </div>
-
-
   <footer class="footer">
     <p>&copy; 2023 MatchKo. All rights reserved.</p>
   </footer>
-
   <script src="script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script>
   $(document).ready(function() {

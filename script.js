@@ -1,5 +1,21 @@
-// Script.js
+// const form = document.querySelector('form');
+// const emailInput = document.getElementById('email-input');
 
+// form.addEventListener('submit', (event)=>{
+//   event.preventDefault();
+//   const email = emailInput.value;
+//   form.action = `https://formsubmit.co/${email}`;
+//   form.submit();
+// })
+
+function encodeEmail(email) {
+  return "https://formsubmit.co/" + btoa(email);
+}
+// function setReplyTo() {
+//   var emailInput = document.getElementById("email-input");
+//   var replyToInput = document.getElementById("_replyto");
+//   replyToInput.value = emailInput.value;
+// }
 document.addEventListener('DOMContentLoaded', function() {
   // Get all the testimonial slides
   var testimonialSlides = document.querySelectorAll('.testimonial-slide');
